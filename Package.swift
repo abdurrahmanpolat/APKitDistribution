@@ -17,14 +17,14 @@ let package = Package(
         .binaryTarget(
             name: "APThemeKit",
             url: "https://github.com/abdurrahmanpolat/APKitDistribution/releases/download/APThemeKit_v1.0.0/APThemeKit.xcframework.zip",
-            checksum: "aed46527be53116a79d9bb22b59429b22070806fc6da304826e8a83fd99f600b"
+            checksum: "e99644a23212b41829fbba8be86bb11f088b70ec50071a9046e573e94ad90db2"
         ),
 
         // MARK: - APRouterKit (örnek olarak boş bırakıldı)
         // .binaryTarget(
         //     name: "APRouterKit",
         //     url: "https://github.com/abdurrahmanpolat/APKitDistribution/releases/download/APRouterKit_v1.0.0/APRouterKit.xcframework.zip",
-        //     checksum: "<<<buraya-checksum>>>"
+        //     checksum: "e99644a23212b41829fbba8be86bb11f088b70ec50071a9046e573e94ad90db2"
         // ),
     ]
 )
