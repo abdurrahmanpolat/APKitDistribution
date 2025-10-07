@@ -25,11 +25,12 @@ let package = Package(
 
 
         // APRouterKit (checksum CI çalıştırınca eklenecek/güncellenecek)
-        .binaryTarget(
-            name: "APRouterKit",
-            url: "https://github.com/abdurrahmanpolat/APKitDistribution/releases/download/APRouterKit_v1.0.0/APRouterKit.xcframework.zip",
-            checksum: "<<<aprouterkit-checksum-here>>>"
-        ),
+                .binaryTarget(
+    name: "APRouterKit",
+    url: "https://github.com/abdurrahmanpolat/APKitDistribution/releases/download/APRouterKit_v1.0.0/APRouterKit.xcframework.zip",
+    checksum: "ff94b7e9a8dfb1873e4870a76f609003b0f11de2aa4e313dbbc12a95f24a72d2"
+),
+
 
         // Placeholder: CI bu satırı bularak yeni target'ları ekler veya günceller.
         // DO NOT REMOVE THIS LINE - CI uses it to insert/update binaryTarget blocks.
