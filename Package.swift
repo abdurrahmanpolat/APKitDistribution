@@ -13,11 +13,12 @@ let package = Package(
     ],
     targets: [
         // APThemeKit örneği (örnek checksum - örnek amaçlı)
-                        .binaryTarget(
+                                .binaryTarget(
     name: "APThemeKit",
     url: "https://github.com/abdurrahmanpolat/APKitDistribution/releases/download/APThemeKit_v1.0.0/APThemeKit.xcframework.zip",
-    checksum: "5743f93c16b4c7bf6150d328f460b96fecab50112868d4b752d38ac2a2f743a6"
+    checksum: "072d7abfeb92880f73d821e63ce29af73ccf03281636cb69adc357807afff1c5"
 ),
+
 
 
 
