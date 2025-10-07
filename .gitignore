@@ -1,0 +1,133 @@
+# =====================================================
+# .gitignore - APKitDistribution (Public Binary Repository)
+# =====================================================
+# Bu dosya, APThemeKit, APRouterKit ve gelecekteki SDK'ların
+# binary (.xcframework.zip) versiyonlarının dağıtıldığı
+# merkezi public repo içindir.
+# =====================================================
+
+# ===================== XCODE USER DATA =====================
+xcuserdata/
+*.xcuserstate
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.pbxuser
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+
+# ===================== BUILD ARTIFACTS =====================
+# Bu repo sadece yayınlanmış binary dosyaları içerir,
+# local build sonuçlarını asla içermemelidir.
+build/
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM*
+*.app
+
+# ===================== SWIFT PACKAGE MANAGER =====================
+.build/
+.swiftpm/
+Package.resolved
+Packages/
+.netrc
+
+# NOT: Package.swift GIT'E EKLENMELİDİR
+!Package.swift
+
+# ===================== BINARY RELEASES =====================
+# Release workflow'ları tarafından otomatik olarak eklenen
+# binary assetler GitHub Releases sekmesinde tutulur.
+# Manuel olarak eklenmemeli.
+*.xcframework/
+*.xcframework.zip
+*.zip
+
+# NOT: Bu repo'da sadece Package.swift binary target'ları
+# referans eder; binary dosyaların kendisi release asset olarak yüklenir.
+# Bu nedenle bu dosyalar git'e eklenmemelidir.
+
+# ===================== CI / CD =====================
+# Workflow dosyaları GIT'E EKLENMELİ
+!.github/
+!.github/workflows/
+!.github/workflows/*.yml
+
+# ===================== LOGS & TEMP FILES =====================
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+*.swp
+*.lock
+
+# ===================== macOS =====================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.TemporaryItems
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ===================== IDE / TOOLS =====================
+.vscode/
+.idea/
+*.iml
+*.code-workspace
+
+# ===================== DOCUMENTATION =====================
+docs/_build/
+.jazzy/
+.Docusaurus/
+site_build/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ===================== GITHUB META =====================
+# Workflow ve repo ayar dosyaları hariç, diğer metadata git'e alınmaz.
+# Public repo olduğu için hassas bilgiler olmamalı.
+secrets.json
+config.yml
+.env
+*.key
+*.pem
+*.p12
+
+# ===================== EXAMPLES & TESTS (opsiyonel) =====================
+# Eğer test veya örnek uygulama tutuluyorsa (local)
+Examples/
+Tests/
+TestProjects/
+
+# =====================================================
+# ✅ GIT'E EKLENMESİ GEREKENLER:
+# =====================================================
+# - Package.swift             → SDK referanslarını içerir
+# - .github/workflows/*.yml   → CI/CD publish & update adımları
+# - README.md / LICENSE.md    → Public repo açıklamaları
+#
+# ❌ GIT'E EKLENMEMESİ GEREKENLER:
+# =====================================================
+# - build/ ve DerivedData/
+# - *.xcframework.zip dosyaları (sadece GitHub Releases’ta tutulur)
+# - xcuserdata/, .DS_Store, .swiftpm cache
+# =====================================================
+
+# ===================== ÖZEL NOT =====================
+# 📦 Yeni SDK eklendiğinde:
+#   1. Workflow (SDK release.yml) otomatik olarak Package.swift'e
+#      binaryTarget ekleyecektir.
+#   2. Bu repo'da yalnızca Package.swift güncellenecek.
+#   3. Binary asset (.xcframework.zip) GitHub Releases sekmesinde kalacak.
+# =====================================================
