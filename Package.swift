@@ -13,9 +13,13 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
+
             name: "APThemeKit",
+
             url: "https://github.com/abdurrahmanpolat/APKitDistribution/releases/download/APThemeKit_v1.0.0/APThemeKit.xcframework.zip",
-            checksum: "1de745701949baeba843fea281e2eddefcb4e41aabdd7da3b1a48de2cb8f89d1"
+
+            checksum: "68b4ab9068c57fd60986ffd2612e1cdee013cbc1b7212730915bf1ee2fdd0a50"
+
         ),
         .binaryTarget(
             name: "APRouterKit",
