@@ -12,11 +12,12 @@ let package = Package(
         .library(name: "APRouterKit", targets: ["APRouterKit"]),
     ],
     targets: [
-        .binaryTarget(
-            name: "APThemeKit",
-            url: "https://github.com/abdurrahmanpolat/APKitDistribution/releases/download/APThemeKit_v1.0.0/APThemeKit.xcframework.zip",
-            checksum: "05393924ba159269f80ac536597fb53367f208d74515976ec3c35c2e9e2a7976"
-        ),
+                .binaryTarget(
+    name: "APThemeKit",
+    url: "https://github.com/abdurrahmanpolat/APKitDistribution/releases/download/APThemeKit_v1.0.0/APThemeKit.xcframework.zip",
+    checksum: "0025955eb93b76ace63a098c810f2e856bc37d94123fa87446b0ee27f956bf1f"
+),
+
         .binaryTarget(
             name: "APRouterKit",
             url: "https://github.com/abdurrahmanpolat/APKitDistribution/releases/download/APRouterKit_v1.0.0/APRouterKit.xcframework.zip",
