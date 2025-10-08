@@ -22,9 +22,13 @@ let package = Package(
 
         ),
         .binaryTarget(
+
             name: "APRouterKit",
+
             url: "https://github.com/abdurrahmanpolat/APKitDistribution/releases/download/APRouterKit_v1.0.0/APRouterKit.xcframework.zip",
-            checksum: "2b14a3c75af383111873e3675dea4d1ee56e9a448e5d04b47c42c3dcce7139fa"
+
+            checksum: "ba53f8b699b82c078717a7db7c942ec72d42db725af2b478b704ecd36cdbf64e"
+
         ),
         // BINARY_TARGETS_PLACEHOLDER
     ]
