@@ -16,9 +16,9 @@ let package = Package(
 
             name: "APThemeKit",
 
-            url: "https://github.com/abdurrahmanpolat/APKitDistribution/releases/download/APThemeKit_v1.0.0/APThemeKit.xcframework.zip",
+            url: "https://github.com/abdurrahmanpolat/APKitDistribution/releases/download/APThemeKit_v1.0.1/APThemeKit.xcframework.zip",
 
-            checksum: "68b4ab9068c57fd60986ffd2612e1cdee013cbc1b7212730915bf1ee2fdd0a50"
+            checksum: "6ed0623ad4f91d80f2229415cd86ca9ba423fe9b1ae10f7ef715dfc587b586be"
 
         ),
         .binaryTarget(
